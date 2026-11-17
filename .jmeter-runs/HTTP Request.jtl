@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testResults version="1.2">
-<httpSample t="22724" it="0" lt="22709" ct="22495" ts="1794920167524" s="true" lb="Login API" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="1936" sby="263" ng="1" na="1">
+<httpSample t="1250" it="0" lt="1238" ct="1144" ts="1794922012512" s="true" lb="Login API" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="1936" sby="263" ng="1" na="1">
   <assertionResult>
     <name>Response Assertion</name>
     <failure>false</failure>
     <error>false</error>
   </assertionResult>
   <responseHeader class="java.lang.String">HTTP/1.1 200 OK
-Date: Tue, 17 Nov 2026 12:56:29 GMT
+Date: Tue, 17 Nov 2026 13:26:53 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 882
 Connection: keep-alive
@@ -17,8 +17,8 @@ Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE, OPTIONS
 Access-Control-Allow-Headers: Content-Type, Authorization, X-Api-Key, X-Request-Id
 Access-Control-Expose-Headers: X-Request-Id, X-Response-Time, X-Total-Count, RateLimit-Remaining, Retry-After
 Access-Control-Max-Age: 86400
-X-Request-Id: req_ef0cf5c887985be8
-X-Response-Time: 1.78ms
+X-Request-Id: req_259642a24ab90704
+X-Response-Time: 0.32ms
 platform: hostinger
 panel: hpanel
 Content-Security-Policy: upgrade-insecure-requests
@@ -29,9 +29,9 @@ Permissions-Policy: geolocation=(), camera=(), microphone=()
 Strict-Transport-Security: max-age=31536000
 Server: hcdn
 alt-svc: h3=&quot;:443&quot;; ma=86400
-x-hcdn-request-id: 358f2cb0303454e7d89cc930eeeb0b54-mum-edge12
+x-hcdn-request-id: bfee7f7cdb9b3a020f9a9914bce9f75d-mum-edge11
 x-hcdn-cache-status: DYNAMIC
-x-hcdn-upstream-rt: 0.046
+x-hcdn-upstream-rt: 0.042
 Accept-Ranges: bytes
 </responseHeader>
   <requestHeader class="java.lang.String">Connection: keep-alive
@@ -43,8 +43,8 @@ User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.12.1)
   <responseData class="java.lang.String">{
     &quot;data&quot;: {
         &quot;tokenType&quot;: &quot;Bearer&quot;,
-        &quot;accessToken&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJxYS1hdXRvbWF0aW9uLWxhYnMiLCJpYXQiOjE3OTQ5MjAxODksImV4cCI6MTc5NDkyMzc4OSwic3ViIjoxLCJlbWFpbCI6InFhQGRlbW8uaW8iLCJyb2xlIjoiYWRtaW4ifQ.dzsF-6e6BxXQ2nhsf1EObzD7Na0nN590IxoFttjdS1M&quot;,
-        &quot;refreshToken&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJxYS1hdXRvbWF0aW9uLWxhYnMiLCJpYXQiOjE3OTQ5MjAxODksImV4cCI6MTc5NTAwNjU4OSwic3ViIjoxLCJ0eXBlIjoicmVmcmVzaCJ9.ANV2Pg75lLzPLfuzb1xftEIxBN5DK2BdTSgnvOzlSvM&quot;,
+        &quot;accessToken&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJxYS1hdXRvbWF0aW9uLWxhYnMiLCJpYXQiOjE3OTQ5MjIwMTMsImV4cCI6MTc5NDkyNTYxMywic3ViIjoxLCJlbWFpbCI6InFhQGRlbW8uaW8iLCJyb2xlIjoiYWRtaW4ifQ.yv_GPDS21BXu-mkX0-U6XFfGOwSjFHZlK1C0DrU_Jcg&quot;,
+        &quot;refreshToken&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJxYS1hdXRvbWF0aW9uLWxhYnMiLCJpYXQiOjE3OTQ5MjIwMTMsImV4cCI6MTc5NTAwODQxMywic3ViIjoxLCJ0eXBlIjoicmVmcmVzaCJ9.ntyF6BOTi6y0CFIMjrJd3fI_JSzKmFrHgGpk8qC8-4M&quot;,
         &quot;expiresIn&quot;: 3600,
         &quot;user&quot;: {
             &quot;id&quot;: 1,
@@ -54,9 +54,9 @@ User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.12.1)
         }
     },
     &quot;meta&quot;: {
-        &quot;requestId&quot;: &quot;req_ef0cf5c887985be8&quot;,
-        &quot;responseTimeMs&quot;: 1.78,
-        &quot;timestamp&quot;: &quot;2026-11-17T12:56:29+00:00&quot;,
+        &quot;requestId&quot;: &quot;req_259642a24ab90704&quot;,
+        &quot;responseTimeMs&quot;: 0.31,
+        &quot;timestamp&quot;: &quot;2026-11-17T13:26:53+00:00&quot;,
         &quot;apiVersion&quot;: &quot;1.0.0&quot;
     }
 }</responseData>
@@ -68,9 +68,9 @@ User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.12.1)
 }</queryString>
   <java.net.URL>https://api.qaautomationlabs.com/v1/auth/login</java.net.URL>
 </httpSample>
-<httpSample t="110" it="0" lt="104" ct="0" ts="1794920190775" s="true" lb="GetAllUsers" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="9245" sby="153" ng="1" na="1">
+<httpSample t="66" it="0" lt="59" ct="0" ts="1794922013867" s="true" lb="GetAllUsers" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="9245" sby="153" ng="1" na="1">
   <responseHeader class="java.lang.String">HTTP/1.1 200 OK
-Date: Tue, 17 Nov 2026 12:56:30 GMT
+Date: Tue, 17 Nov 2026 13:26:53 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -80,8 +80,8 @@ Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE, OPTIONS
 Access-Control-Allow-Headers: Content-Type, Authorization, X-Api-Key, X-Request-Id
 Access-Control-Expose-Headers: X-Request-Id, X-Response-Time, X-Total-Count, RateLimit-Remaining, Retry-After
 Access-Control-Max-Age: 86400
-X-Request-Id: req_ffe96ba294b311f8
-X-Response-Time: 0.23ms
+X-Request-Id: req_8d3bd15aa3e09365
+X-Response-Time: 0.15ms
 X-Total-Count: 50
 platform: hostinger
 panel: hpanel
@@ -93,9 +93,9 @@ Permissions-Policy: geolocation=(), camera=(), microphone=()
 Strict-Transport-Security: max-age=31536000
 Server: hcdn
 alt-svc: h3=&quot;:443&quot;; ma=86400
-x-hcdn-request-id: ba778a41c3a38d445851cade8599ec23-mum-edge12
+x-hcdn-request-id: 6db9767f6bffea612c4e428224d1b007-mum-edge11
 x-hcdn-cache-status: DYNAMIC
-x-hcdn-upstream-rt: 0.031
+x-hcdn-upstream-rt: 0.023
 </responseHeader>
   <requestHeader class="java.lang.String">Connection: keep-alive
 Host: api.qaautomationlabs.com
@@ -333,9 +333,9 @@ User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.12.1)
         &quot;hasPrev&quot;: false
     },
     &quot;meta&quot;: {
-        &quot;requestId&quot;: &quot;req_ffe96ba294b311f8&quot;,
-        &quot;responseTimeMs&quot;: 0.23,
-        &quot;timestamp&quot;: &quot;2026-11-17T12:56:30+00:00&quot;,
+        &quot;requestId&quot;: &quot;req_8d3bd15aa3e09365&quot;,
+        &quot;responseTimeMs&quot;: 0.15,
+        &quot;timestamp&quot;: &quot;2026-11-17T13:26:53+00:00&quot;,
         &quot;apiVersion&quot;: &quot;1.0.0&quot;
     }
 }</responseData>
