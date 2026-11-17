@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="22724" it="0" lt="22709" ct="22495" ts="1794920167524" s="true" lb="Login API" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="1936" sby="263" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Tue, 17 Nov 2026 12:56:29 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 882
+Connection: keep-alive
+Vary: Accept-Encoding
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE, OPTIONS
+Access-Control-Allow-Headers: Content-Type, Authorization, X-Api-Key, X-Request-Id
+Access-Control-Expose-Headers: X-Request-Id, X-Response-Time, X-Total-Count, RateLimit-Remaining, Retry-After
+Access-Control-Max-Age: 86400
+X-Request-Id: req_ef0cf5c887985be8
+X-Response-Time: 1.78ms
+platform: hostinger
+panel: hpanel
+Content-Security-Policy: upgrade-insecure-requests
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Referrer-Policy: strict-origin-when-cross-origin
+Permissions-Policy: geolocation=(), camera=(), microphone=()
+Strict-Transport-Security: max-age=31536000
+Server: hcdn
+alt-svc: h3=&quot;:443&quot;; ma=86400
+x-hcdn-request-id: 358f2cb0303454e7d89cc930eeeb0b54-mum-edge12
+x-hcdn-cache-status: DYNAMIC
+x-hcdn-upstream-rt: 0.046
+Accept-Ranges: bytes
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Length: 59
+Content-Type: text/plain; charset=UTF-8
+Host: api.qaautomationlabs.com
+User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.12.1)
+</requestHeader>
+  <responseData class="java.lang.String">{
+    &quot;data&quot;: {
+        &quot;tokenType&quot;: &quot;Bearer&quot;,
+        &quot;accessToken&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJxYS1hdXRvbWF0aW9uLWxhYnMiLCJpYXQiOjE3OTQ5MjAxODksImV4cCI6MTc5NDkyMzc4OSwic3ViIjoxLCJlbWFpbCI6InFhQGRlbW8uaW8iLCJyb2xlIjoiYWRtaW4ifQ.dzsF-6e6BxXQ2nhsf1EObzD7Na0nN590IxoFttjdS1M&quot;,
+        &quot;refreshToken&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJxYS1hdXRvbWF0aW9uLWxhYnMiLCJpYXQiOjE3OTQ5MjAxODksImV4cCI6MTc5NTAwNjU4OSwic3ViIjoxLCJ0eXBlIjoicmVmcmVzaCJ9.ANV2Pg75lLzPLfuzb1xftEIxBN5DK2BdTSgnvOzlSvM&quot;,
+        &quot;expiresIn&quot;: 3600,
+        &quot;user&quot;: {
+            &quot;id&quot;: 1,
+            &quot;email&quot;: &quot;qa@demo.io&quot;,
+            &quot;name&quot;: &quot;QA Demo User&quot;,
+            &quot;role&quot;: &quot;admin&quot;
+        }
+    },
+    &quot;meta&quot;: {
+        &quot;requestId&quot;: &quot;req_ef0cf5c887985be8&quot;,
+        &quot;responseTimeMs&quot;: 1.78,
+        &quot;timestamp&quot;: &quot;2026-11-17T12:56:29+00:00&quot;,
+        &quot;apiVersion&quot;: &quot;1.0.0&quot;
+    }
+}</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+  &quot;email&quot;: &quot;qa@demo.io&quot;,&#xd;
+  &quot;password&quot;: &quot;Password123&quot;&#xd;
+}</queryString>
+  <java.net.URL>https://api.qaautomationlabs.com/v1/auth/login</java.net.URL>
+</httpSample>
+<httpSample t="110" it="0" lt="104" ct="0" ts="1794920190775" s="true" lb="GetAllUsers" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="9245" sby="153" ng="1" na="1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Tue, 17 Nov 2026 12:56:30 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE, OPTIONS
+Access-Control-Allow-Headers: Content-Type, Authorization, X-Api-Key, X-Request-Id
+Access-Control-Expose-Headers: X-Request-Id, X-Response-Time, X-Total-Count, RateLimit-Remaining, Retry-After
+Access-Control-Max-Age: 86400
+X-Request-Id: req_ffe96ba294b311f8
+X-Response-Time: 0.23ms
+X-Total-Count: 50
+platform: hostinger
+panel: hpanel
+Content-Security-Policy: upgrade-insecure-requests
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Referrer-Policy: strict-origin-when-cross-origin
+Permissions-Policy: geolocation=(), camera=(), microphone=()
+Strict-Transport-Security: max-age=31536000
+Server: hcdn
+alt-svc: h3=&quot;:443&quot;; ma=86400
+x-hcdn-request-id: ba778a41c3a38d445851cade8599ec23-mum-edge12
+x-hcdn-cache-status: DYNAMIC
+x-hcdn-upstream-rt: 0.031
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: api.qaautomationlabs.com
+User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.12.1)
+</requestHeader>
+  <responseData class="java.lang.String">{
+    &quot;data&quot;: [
+        {
+            &quot;id&quot;: 1,
+            &quot;firstName&quot;: &quot;Priya&quot;,
+            &quot;lastName&quot;: &quot;Rossi&quot;,
+            &quot;username&quot;: &quot;priya.rossi1&quot;,
+            &quot;email&quot;: &quot;priya.rossi@qalabs.dev&quot;,
+            &quot;role&quot;: &quot;engineer&quot;,
+            &quot;status&quot;: &quot;invited&quot;,
+            &quot;avatar&quot;: &quot;https://api.qaautomationlabs.com/v1/avatars/u1.svg&quot;,
+            &quot;createdAt&quot;: &quot;2025-10-27T14:38:31+00:00&quot;
+        },
+        {
+            &quot;id&quot;: 2,
+            &quot;firstName&quot;: &quot;Ethan&quot;,
+            &quot;lastName&quot;: &quot;Andersson&quot;,
+            &quot;username&quot;: &quot;ethan.andersson2&quot;,
+            &quot;email&quot;: &quot;ethan.andersson@qalabs.dev&quot;,
+            &quot;role&quot;: &quot;viewer&quot;,
+            &quot;status&quot;: &quot;suspended&quot;,
+            &quot;avatar&quot;: &quot;https://api.qaautomationlabs.com/v1/avatars/u2.svg&quot;,
+            &quot;createdAt&quot;: &quot;2024-09-22T05:39:30+00:00&quot;
+        },
+        {
+            &quot;id&quot;: 3,
+            &quot;firstName&quot;: &quot;Diego&quot;,
+            &quot;lastName&quot;: &quot;Haddad&quot;,
+            &quot;username&quot;: &quot;diego.haddad3&quot;,
+            &quot;email&quot;: &quot;diego.haddad@qalabs.dev&quot;,
+            &quot;role&quot;: &quot;analyst&quot;,
+            &quot;status&quot;: &quot;active&quot;,
+            &quot;avatar&quot;: &quot;https://api.qaautomationlabs.com/v1/avatars/u3.svg&quot;,
+            &quot;createdAt&quot;: &quot;2024-01-30T19:25:14+00:00&quot;
+        },
+        {
+            &quot;id&quot;: 4,
+            &quot;firstName&quot;: &quot;Omar&quot;,
+            &quot;lastName&quot;: &quot;Chen&quot;,
+            &quot;username&quot;: &quot;omar.chen4&quot;,
+            &quot;email&quot;: &quot;omar.chen@qalabs.dev&quot;,
+            &quot;role&quot;: &quot;analyst&quot;,
+            &quot;status&quot;: &quot;invited&quot;,
+            &quot;avatar&quot;: &quot;https://api.qaautomationlabs.com/v1/avatars/u4.svg&quot;,
+            &quot;createdAt&quot;: &quot;2026-07-07T18:32:02+00:00&quot;
+        },
+        {
+            &quot;id&quot;: 5,
+            &quot;firstName&quot;: &quot;Sofia&quot;,
+            &quot;lastName&quot;: &quot;Reyes&quot;,
+            &quot;username&quot;: &quot;sofia.reyes5&quot;,
+            &quot;email&quot;: &quot;sofia.reyes@qalabs.dev&quot;,
+            &quot;role&quot;: &quot;manager&quot;,
+            &quot;status&quot;: &quot;active&quot;,
+            &quot;avatar&quot;: &quot;https://api.qaautomationlabs.com/v1/avatars/u5.svg&quot;,
+            &quot;createdAt&quot;: &quot;2026-09-12T10:07:08+00:00&quot;
+        },
+        {
+            &quot;id&quot;: 6,
+            &quot;firstName&quot;: &quot;Lucas&quot;,
+            &quot;lastName&quot;: &quot;Kim&quot;,
+            &quot;username&quot;: &quot;lucas.kim6&quot;,
+            &quot;email&quot;: &quot;lucas.kim@qalabs.dev&quot;,
+            &quot;role&quot;: &quot;engineer&quot;,
+            &quot;status&quot;: &quot;suspended&quot;,
+            &quot;avatar&quot;: &quot;https://api.qaautomationlabs.com/v1/avatars/u6.svg&quot;,
+            &quot;createdAt&quot;: &quot;2024-02-25T12:28:55+00:00&quot;
+        },
+        {
+            &quot;id&quot;: 7,
+            &quot;firstName&quot;: &quot;Emma&quot;,
+            &quot;lastName&quot;: &quot;Chen&quot;,
+            &quot;username&quot;: &quot;emma.chen7&quot;,
+            &quot;email&quot;: &quot;emma.chen@qalabs.dev&quot;,
+            &quot;role&quot;: &quot;engineer&quot;,
+            &quot;status&quot;: &quot;suspended&quot;,
+            &quot;avatar&quot;: &quot;https://api.qaautomationlabs.com/v1/avatars/u7.svg&quot;,
+            &quot;createdAt&quot;: &quot;2026-12-01T06:18:17+00:00&quot;
+        },
+        {
+            &quot;id&quot;: 8,
+            &quot;firstName&quot;: &quot;Diego&quot;,
+            &quot;lastName&quot;: &quot;Nguyen&quot;,
+            &quot;username&quot;: &quot;diego.nguyen8&quot;,
+            &quot;email&quot;: &quot;diego.nguyen@qalabs.dev&quot;,
+            &quot;role&quot;: &quot;admin&quot;,
+            &quot;status&quot;: &quot;active&quot;,
+            &quot;avatar&quot;: &quot;https://api.qaautomationlabs.com/v1/avatars/u8.svg&quot;,
+            &quot;createdAt&quot;: &quot;2024-01-06T23:34:38+00:00&quot;
+        },
+        {
+            &quot;id&quot;: 9,
+            &quot;firstName&quot;: &quot;Lucas&quot;,
+            &quot;lastName&quot;: &quot;Haddad&quot;,
+            &quot;username&quot;: &quot;lucas.haddad9&quot;,
+            &quot;email&quot;: &quot;lucas.haddad@qalabs.dev&quot;,
+            &quot;role&quot;: &quot;analyst&quot;,
+            &quot;status&quot;: &quot;suspended&quot;,
+            &quot;avatar&quot;: &quot;https://api.qaautomationlabs.com/v1/avatars/u9.svg&quot;,
+            &quot;createdAt&quot;: &quot;2024-09-11T14:31:58+00:00&quot;
+        },
+        {
+            &quot;id&quot;: 10,
+            &quot;firstName&quot;: &quot;Noah&quot;,
+            &quot;lastName&quot;: &quot;Patel&quot;,
+            &quot;username&quot;: &quot;noah.patel10&quot;,
+            &quot;email&quot;: &quot;noah.patel@qalabs.dev&quot;,
+            &quot;role&quot;: &quot;admin&quot;,
+            &quot;status&quot;: &quot;invited&quot;,
+            &quot;avatar&quot;: &quot;https://api.qaautomationlabs.com/v1/avatars/u10.svg&quot;,
+            &quot;createdAt&quot;: &quot;2025-04-18T09:05:50+00:00&quot;
+        },
+        {
+            &quot;id&quot;: 11,
+            &quot;firstName&quot;: &quot;Priya&quot;,
+            &quot;lastName&quot;: &quot;Kumar&quot;,
+            &quot;username&quot;: &quot;priya.kumar11&quot;,
+            &quot;email&quot;: &quot;priya.kumar@qalabs.dev&quot;,
+            &quot;role&quot;: &quot;viewer&quot;,
+            &quot;status&quot;: &quot;active&quot;,
+            &quot;avatar&quot;: &quot;https://api.qaautomationlabs.com/v1/avatars/u11.svg&quot;,
+            &quot;createdAt&quot;: &quot;2023-08-08T19:37:42+00:00&quot;
+        },
+        {
+            &quot;id&quot;: 12,
+            &quot;firstName&quot;: &quot;Mia&quot;,
+            &quot;lastName&quot;: &quot;Sharma&quot;,
+            &quot;username&quot;: &quot;mia.sharma12&quot;,
+            &quot;email&quot;: &quot;mia.sharma@qalabs.dev&quot;,
+            &quot;role&quot;: &quot;admin&quot;,
+            &quot;status&quot;: &quot;active&quot;,
+            &quot;avatar&quot;: &quot;https://api.qaautomationlabs.com/v1/avatars/u12.svg&quot;,
+            &quot;createdAt&quot;: &quot;2025-06-18T23:38:48+00:00&quot;
+        },
+        {
+            &quot;id&quot;: 13,
+            &quot;firstName&quot;: &quot;Diego&quot;,
+            &quot;lastName&quot;: &quot;Haddad&quot;,
+            &quot;username&quot;: &quot;diego.haddad13&quot;,
+            &quot;email&quot;: &quot;diego.haddad@qalabs.dev&quot;,
+            &quot;role&quot;: &quot;admin&quot;,
+            &quot;status&quot;: &quot;invited&quot;,
+            &quot;avatar&quot;: &quot;https://api.qaautomationlabs.com/v1/avatars/u13.svg&quot;,
+            &quot;createdAt&quot;: &quot;2026-04-10T12:07:49+00:00&quot;
+        },
+        {
+            &quot;id&quot;: 14,
+            &quot;firstName&quot;: &quot;Liam&quot;,
+            &quot;lastName&quot;: &quot;Fischer&quot;,
+            &quot;username&quot;: &quot;liam.fischer14&quot;,
+            &quot;email&quot;: &quot;liam.fischer@qalabs.dev&quot;,
+            &quot;role&quot;: &quot;engineer&quot;,
+            &quot;status&quot;: &quot;suspended&quot;,
+            &quot;avatar&quot;: &quot;https://api.qaautomationlabs.com/v1/avatars/u14.svg&quot;,
+            &quot;createdAt&quot;: &quot;2023-06-05T18:11:51+00:00&quot;
+        },
+        {
+            &quot;id&quot;: 15,
+            &quot;firstName&quot;: &quot;Kabir&quot;,
+            &quot;lastName&quot;: &quot;Costa&quot;,
+            &quot;username&quot;: &quot;kabir.costa15&quot;,
+            &quot;email&quot;: &quot;kabir.costa@qalabs.dev&quot;,
+            &quot;role&quot;: &quot;engineer&quot;,
+            &quot;status&quot;: &quot;invited&quot;,
+            &quot;avatar&quot;: &quot;https://api.qaautomationlabs.com/v1/avatars/u15.svg&quot;,
+            &quot;createdAt&quot;: &quot;2025-04-06T18:49:39+00:00&quot;
+        },
+        {
+            &quot;id&quot;: 16,
+            &quot;firstName&quot;: &quot;Mia&quot;,
+            &quot;lastName&quot;: &quot;Dubois&quot;,
+            &quot;username&quot;: &quot;mia.dubois16&quot;,
+            &quot;email&quot;: &quot;mia.dubois@qalabs.dev&quot;,
+            &quot;role&quot;: &quot;viewer&quot;,
+            &quot;status&quot;: &quot;suspended&quot;,
+            &quot;avatar&quot;: &quot;https://api.qaautomationlabs.com/v1/avatars/u16.svg&quot;,
+            &quot;createdAt&quot;: &quot;2023-02-07T22:12:21+00:00&quot;
+        },
+        {
+            &quot;id&quot;: 17,
+            &quot;firstName&quot;: &quot;Mia&quot;,
+            &quot;lastName&quot;: &quot;Silva&quot;,
+            &quot;username&quot;: &quot;mia.silva17&quot;,
+            &quot;email&quot;: &quot;mia.silva@qalabs.dev&quot;,
+            &quot;role&quot;: &quot;manager&quot;,
+            &quot;status&quot;: &quot;active&quot;,
+            &quot;avatar&quot;: &quot;https://api.qaautomationlabs.com/v1/avatars/u17.svg&quot;,
+            &quot;createdAt&quot;: &quot;2026-03-31T11:26:18+00:00&quot;
+        },
+        {
+            &quot;id&quot;: 18,
+            &quot;firstName&quot;: &quot;Diego&quot;,
+            &quot;lastName&quot;: &quot;Silva&quot;,
+            &quot;username&quot;: &quot;diego.silva18&quot;,
+            &quot;email&quot;: &quot;diego.silva@qalabs.dev&quot;,
+            &quot;role&quot;: &quot;admin&quot;,
+            &quot;status&quot;: &quot;suspended&quot;,
+            &quot;avatar&quot;: &quot;https://api.qaautomationlabs.com/v1/avatars/u18.svg&quot;,
+            &quot;createdAt&quot;: &quot;2025-10-04T21:00:58+00:00&quot;
+        },
+        {
+            &quot;id&quot;: 19,
+            &quot;firstName&quot;: &quot;Liam&quot;,
+            &quot;lastName&quot;: &quot;Novak&quot;,
+            &quot;username&quot;: &quot;liam.novak19&quot;,
+            &quot;email&quot;: &quot;liam.novak@qalabs.dev&quot;,
+            &quot;role&quot;: &quot;manager&quot;,
+            &quot;status&quot;: &quot;invited&quot;,
+            &quot;avatar&quot;: &quot;https://api.qaautomationlabs.com/v1/avatars/u19.svg&quot;,
+            &quot;createdAt&quot;: &quot;2026-02-18T15:48:05+00:00&quot;
+        },
+        {
+            &quot;id&quot;: 20,
+            &quot;firstName&quot;: &quot;Noah&quot;,
+            &quot;lastName&quot;: &quot;Sharma&quot;,
+            &quot;username&quot;: &quot;noah.sharma20&quot;,
+            &quot;email&quot;: &quot;noah.sharma@qalabs.dev&quot;,
+            &quot;role&quot;: &quot;analyst&quot;,
+            &quot;status&quot;: &quot;active&quot;,
+            &quot;avatar&quot;: &quot;https://api.qaautomationlabs.com/v1/avatars/u20.svg&quot;,
+            &quot;createdAt&quot;: &quot;2026-11-02T20:00:19+00:00&quot;
+        }
+    ],
+    &quot;pagination&quot;: {
+        &quot;page&quot;: 1,
+        &quot;pageSize&quot;: 20,
+        &quot;totalItems&quot;: 50,
+        &quot;totalPages&quot;: 3,
+        &quot;hasNext&quot;: true,
+        &quot;hasPrev&quot;: false
+    },
+    &quot;meta&quot;: {
+        &quot;requestId&quot;: &quot;req_ffe96ba294b311f8&quot;,
+        &quot;responseTimeMs&quot;: 0.23,
+        &quot;timestamp&quot;: &quot;2026-11-17T12:56:30+00:00&quot;,
+        &quot;apiVersion&quot;: &quot;1.0.0&quot;
+    }
+}</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://api.qaautomationlabs.com/v1/users?page=1&amp;limit=20</java.net.URL>
+</httpSample>
+
+</testResults>

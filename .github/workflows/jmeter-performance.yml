@@ -1,0 +1,81 @@
+
+name: JMeter Performance Testing
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  performance-test:
+    runs-on: ubuntu-latest
+
+    env:
+      JMETER_VERSION: 5.6.3
+      LOGIN_USERNAME: ${{ secrets.LOGIN_USERNAME }}
+      LOGIN_PASSWORD: ${{ secrets.LOGIN_PASSWORD }}
+      THREADS: 5
+      RAMPUP: 10
+      LOOPS: 1
+
+    steps:
+      # 1. Checkout GitHub repository
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      # 2. Install Java
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      # 3. Download and install JMeter
+      - name: Install Apache JMeter
+        run: |
+          curl -fsSL \
+            https://archive.apache.org/dist/jmeter/binaries/apache-jmeter-${JMETER_VERSION}.tgz \
+            -o jmeter.tgz
+
+          tar -xzf jmeter.tgz
+
+          echo "$PWD/apache-jmeter-${JMETER_VERSION}/bin" \
+            >> "$GITHUB_PATH"
+
+      # 4. Verify installation
+      - name: Verify JMeter
+        run: |
+          java -version
+          jmeter -v
+
+      # 5. Create results directory
+      - name: Prepare Results
+        run: |
+          mkdir -p Results Reports
+
+      # 6. Execute JMeter test
+      - name: Run Login API Performance Test
+        run: |
+          jmeter -n \
+            -t TestPlans/Login_API_Load_Test.jmx \
+            -l Results/login-results.jtl \
+            -j Results/jmeter.log \
+            -e \
+            -o Reports/HTML_Report \
+            -Jthreads=${THREADS} \
+            -Jrampup=${RAMPUP} \
+            -Jloops=${LOOPS}
+
+      # 7. Upload execution results and report
+      - name: Upload JMeter Reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: JMeter-Performance-Reports
+          path: |
+            Results/
+            Reports/
+          if-no-files-found: warn
+          retention-days: 15
